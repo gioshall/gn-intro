@@ -24,8 +24,8 @@ body {
 }
 
 .intro {
-	width: 570px;
-	height: 570px;
+	width: 620px;
+	height: 620px;
 	margin: auto;
 	overflow: hidden;
 	-webkit-transform: translateZ(0);
@@ -33,12 +33,12 @@ body {
 
 
 .flipsnap {
-	width: 2850px;
+	width: 3100px;
 }
 
 .item {
-	width: 570px;
-	height: 520px;
+	width: 620px;
+	height: 580px;
 	text-align: center;
 	padding: 0;
 	float: left;
@@ -90,24 +90,24 @@ body {
 }
 
 .item .text {
-	width: 500px;
+	width: 580px;
 	text-align: left;
 	margin: auto;
-	font-size: 20px;
+	font-size: 24px;
 }
 
 .item .text.tinner {
-	margin-top: 350px;
+	margin-top: 380px;
 }
 
 .item .text h1 {
-	line-height: 50px;
+	line-height: 60px;
 	margin: 0;
 }
 
 .item .text h2 {
-	line-height: 30px;
-	font-size: 28px;
+	line-height: 40px;
+	font-size: 30px;
 	margin: 0 0 20px 0;
 	font-weight: normal;
 }
