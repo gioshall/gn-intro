@@ -1,6 +1,5 @@
 body {
-	background: url(../img/intro-bg.svg) no-repeat;
-	background-size: auto 100%;
+	
 	margin: 0;
 	padding: 0;
 	font-family: Microsoft JhengHei;
@@ -10,6 +9,8 @@ body {
 }
 
 .wrapper {
+	background: url(../img/intro-bg.svg) no-repeat;
+	background-size: cover;
 	display: table;
 	position: absolute;
 	height: 100%;
