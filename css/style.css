@@ -33,7 +33,7 @@ body {
 
 
 .flipsnap {
-	width: 3100px;
+	width: 3720px;
 }
 
 .item {
@@ -88,6 +88,23 @@ body {
 .layer.intro04b {
 	background: url(../img/intro-04-b.svg) top center no-repeat;
 }
+
+.layer.intro-tip01a {
+	background: url(../img/intro-tip01-a.svg) top center no-repeat;
+}
+
+.layer.intro-tip01b {
+	background: url(../img/intro-tip01-b.svg) top center no-repeat;
+}
+
+.layer.intro-tip01c.left {
+	background: url(../img/intro-tip01-c-left.svg) top center no-repeat;
+}
+
+.layer.intro-tip01c.right {
+	background: url(../img/intro-tip01-c-right.svg) top center no-repeat;
+}
+
 
 .item .text {
 	width: 580px;
