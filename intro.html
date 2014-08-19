@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>intro</title>
+</head>
+<link rel="stylesheet" href="css/style.css" class="css">
+<body>
+
+<div class="wrapper">
+	<div class="container">
+		<div class="intro">
+			
+			<div class="flipsnap">
+				<div class="item">
+					<img src="img/logo-u.svg">
+					<div class="text">
+					<h1>經典遊戲大作，一次網羅</h1>
+					<h2>一次蒐集你最想玩的。</h2>
+						不論是賽車﹑ 射擊﹑或球類遊戲，最夯的熱門遊戲，<br>為你精心挑選。
+					</div>					
+				</div>
+				<div class="item">
+					<div class="layer intro01a"></div>
+					<div class="layer intro01b"></div>
+					<div class="text tinner">
+					<h1>超直覺虛擬按鍵設計</h1>
+					<h2>新世代遊戲主機操作體驗，完美重現。</h2>
+						操作好上手，一切就是這麼自然。隨心所欲，讓遊戲<br>更好玩。
+					</div>
+				</div>
+				<div class="item">
+					<div class="layer intro02a"></div>
+					<div class="layer intro02b"></div>
+					<div class="text tinner">
+					<h1>無縫接軌，走到哪玩到哪</h1>
+					<h2>隨時隨地都能獲得精彩的小小娛樂。</h2>
+						不須一再下載， 遊戲已自動推送到你所有裝置上。<br>從晨間咖啡到傍晚通勤，都有精彩遊戲伴隨。
+					</div>
+				</div>
+				<div class="item">
+					<div class="layer intro03a"></div>
+					<div class="layer intro03b"></div>
+					<div class="text tinner">
+					<h1>高品質遊戲，完美呈現</h1>
+					<h2>享受無懈可擊的遊戲品質。</h2>
+						每款遊戲都無比鮮麗生動，既流暢又真實，讓你享受<br>全方位的高品質遊戲體驗。
+					</div>
+				</div>
+				<div class="item">
+					<div class="layer intro04a"></div>
+					<div class="layer intro04b"></div>
+					<div class="text tinner">
+					<h1>物超所值的遊戲組合</h1>
+					<h2>輕鬆選購，玩心大放。</h2>
+						可選擇單獨購買或是超值的遊戲組合。不需昂貴花費，<br>也能盡享遊戲樂趣。
+					</div>
+				</div>
+			</div>
+
+			<div class="pointer">
+			<span class="current"></span>
+			<span class=""></span>
+			<span class=""></span>
+			<span class=""></span>
+			<span class=""></span>
+		    </div>
+
+		</div>
+	</div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js/flipsnap.min.js"></script>
+<script>
+	var $pointer = $('.pointer span');
+	var flipsnap = Flipsnap('.flipsnap', {
+		distance: 570
+	});
+	flipsnap.element.addEventListener('fspointmove', function() {
+		$pointer.filter('.current').removeClass('current');
+		$pointer.eq(flipsnap.currentPoint).addClass('current');
+	}, false);
+</script>	
+</body>
+</html>
