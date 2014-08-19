@@ -65,6 +65,7 @@
 				</div>
 				<div class="item">
 					<div class="layer intro-tip02a"></div>
+					<div class="layer intro-tip02b"></div>
 				</div>
 			</div>
 
@@ -91,6 +92,12 @@
 		$pointer.filter('.current').removeClass('current');
 		$pointer.eq(flipsnap.currentPoint).addClass('current');
 	}, false);
+
+	//
+	flipsnap.element.addEventListener('fstouchend', function(ev) {
+    console.log(JSON.stringify(ev.newPoint));
+    }, false);
+
 </script>	
 </body>
 </html>

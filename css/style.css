@@ -119,6 +119,11 @@ body {
 	display: block;
 }
 
+.layer.intro-tip02b {
+	background: url(../img/intro-tip02-b.svg) top center no-repeat;
+}
+
+
 
 .item .text {
 	width: 580px;
