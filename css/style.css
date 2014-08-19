@@ -33,7 +33,7 @@ body {
 
 
 .flipsnap {
-	width: 3720px;
+	width: 4340px;
 }
 
 .item {
@@ -103,6 +103,20 @@ body {
 
 .layer.intro-tip01c.right {
 	background: url(../img/intro-tip01-c-right.svg) top center no-repeat;
+}
+
+.layer.intro-tip02a {
+	background: url(../img/intro-tip01-a.svg) top center no-repeat;
+}
+
+.layer.intro-tip02a::after {
+	background: url(../img/intro-tip01-b.svg) top center no-repeat;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
 }
 
 
