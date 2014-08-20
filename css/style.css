@@ -122,8 +122,6 @@ body {
 	margin-left: -90px;
 	top: 88px;
 	z-index: 0;
-	-webkit-animation:screen 5s 1;
-	animation:screen 5s 1;
 }
 
 
@@ -174,20 +172,6 @@ body {
 	position: absolute;
 	-webkit-animation:ani-fgr 5s infinite;
 	animation:ani-ui-fgr 5s infinite;
-}
-
-@-webkit-keyframes screen
-{
-    0%{}
-    20%{overflow: hidden;}
-    100%{overflow: hidden;}
-}
-
-@keyframes screen
-{
-    0%{}
-    20%{overflow: hidden;}
-    100%{overflow: hidden;}
 }
 
 @-webkit-keyframes ani-ui
