@@ -95,8 +95,6 @@ body {
 
 .layer.intro-tip01b {
 	background: url(../img/intro-tip01-b.svg) top center no-repeat;
-	overflow: hidden;
-	z-index: 50;
 }
 
 .layer.intro-tip01c {
