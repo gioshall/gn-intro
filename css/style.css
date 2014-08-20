@@ -176,9 +176,9 @@ body {
 
 @-webkit-keyframes ani-ui
 {
-    0%{margin-left: 0;opacity: 0;}
-    5%{margin-left: 0;opacity: 1;}
-    20%{margin-left: 0;}
+    0%{margin-left: -1px;opacity: 0;}
+    5%{margin-left: -1px;opacity: 1;}
+    20%{margin-left: -1px;}
     28%{margin-left: -180px;}
     35%{margin-left: -180px;}
     43%{margin-left: -360px;}
@@ -188,9 +188,9 @@ body {
 }
 @keyframes ani-ui
 {
-    0%{margin-left: 0;opacity: 0;}
-    5%{margin-left: 0;opacity: 1;}
-    20%{margin-left: 0;}
+    0%{margin-left: -1px;opacity: 0;}
+    5%{margin-left: -1px;opacity: 1;}
+    20%{margin-left: -1px;}
     28%{margin-left: -180px;}
     35%{margin-left: -180px;}
     43%{margin-left: -360px;}
