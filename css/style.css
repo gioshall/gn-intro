@@ -133,8 +133,8 @@ body {
 	display: block;
 	position: absolute;
 	opacity: 0;
-	-webkit-animation:ani-ui 5s infinite;
-	animation:ani-ui 5s infinite;
+	/*-webkit-animation:ani-ui 5s infinite;
+	animation:ani-ui 5s infinite;*/
 }
 
 .oprani .intro-tip-screen .innerui::before,.oprani .intro-tip-screen .innerui::after {
