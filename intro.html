@@ -60,7 +60,7 @@
 				<div class="item">
 					<div class="layer intro-tip01a"></div>
 					<div class="layer intro-tip-screen">
-						<div class="innerui"><span class="uiclick"></span></div>
+						<div class="inner"><span class="uiclick"></span></div>
 					</div>
 					<div class="layer intro-tip01c left"></div>
 					<div class="layer intro-tip01b"></div>
@@ -103,6 +103,13 @@
     	$('.pointer').hide()
     }else{
     	$('.pointer').show()
+    }
+    if( iPage == 5){
+    	$('.inner').addClass('innerui');
+    	$('.intro-tip01b').addClass('fgrani')
+    }else{
+    	$('.inner').removeClass('innerui');
+    	$('.intro-tip01b').removeClass('fgrani')
     }
     }, false);
 

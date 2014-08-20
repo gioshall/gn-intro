@@ -94,6 +94,7 @@ body {
 }
 
 .layer.intro-tip01b {
+	z-index: 5;
 	background: url(../img/intro-tip01-b.svg) top center no-repeat;
 }
 
@@ -106,7 +107,7 @@ body {
 }
 
 .intro-tip-screen {
-	background-color: rgba(0,0,0,0.5);
+	background-color: #41b111;
 	width: 180px;
 	height: 315px;
 	left: 50%;
@@ -145,7 +146,7 @@ body {
 	animation:ani-ui-over2 4s infinite;
 }
 
-.intro-tip-screen .uiclick {
+.intro-tip-screen .innerui .uiclick {
 	background: url(../img/intro-tip01-screen-click.svg) top center no-repeat;
 	position: absolute;
 	width: 0px;
@@ -157,59 +158,99 @@ body {
 	animation:ani-ui-click 4s infinite;
 }
 
+.layer.intro-tip01b.fgrani {
+	-webkit-animation:ani-fgr 4s infinite;
+	animation:ani-ui-fgr 4s infinite;
+}
+
 @-webkit-keyframes ani-ui
 {
-    10%{margin-left: 0;}
-    20%{margin-left: -180px;}
-    25%{margin-left: -180px;}
-    35%{margin-left: -360px;}
-    95%{margin-left: -360px;}
+    20%{margin-left: 0;}
+    30%{margin-left: -180px;}
+    35%{margin-left: -180px;}
+    45%{margin-left: -360px;}
+    91%{margin-left: -360px;opacity: 1;}
+    98%{margin-left: -360px;opacity: 0;}
+    99%{margin-left: 0px;opacity: 0;}
 }
 @keyframes ani-ui
 {
-    10%{margin-left: 0;}
-    20%{margin-left: -180px;}
-    25%{margin-left: -180px;}
-    35%{margin-left: -360px;}
-    95%{margin-left: -360px;}
+    20%{margin-left: 0;}
+    30%{margin-left: -180px;}
+    35%{margin-left: -180px;}
+    45%{margin-left: -360px;}
+    91%{margin-left: -360px;opacity: 1;}
+    98%{margin-left: -360px;opacity: 0;}
+    99%{margin-left: 0px;opacity: 0;}
+}
+
+@-webkit-keyframes ani-fgr
+{
+    20%{left: 0;}
+    23%{left: -8px;}
+    25%{left: 0;}
+    35%{left: 0;}
+    38%{left: -8px;}
+    40%{left: 0;}
+    50%{left: 0;top: 0;}
+    53%{left: 0;top: 3px;}
+    55%{left: 0;top: 0;}
+    70%{left: 0;}
+    75%{left: 10px;}
+    77%{left: 0;}
+}
+@keyframes ani-fgr
+{
+	20%{left: 0;}
+    23%{left: -8px;}
+    25%{left: 0;}
+    35%{left: 0;}
+    38%{left: -8px;}
+    40%{left: 0;}
+    50%{left: 0;top: 0;}
+    53%{left: 0;top: 3px;}
+    55%{left: 0;top: 0;}
+    70%{left: 0;}
+    75%{left: 10px;}
+    77%{left: 0;} 
 }
 
 @-webkit-keyframes ani-ui-over
 {
-    10%{opacity: 0;}
-    20%{opacity: 1;}
+    20%{opacity: 0;}
+    30%{opacity: 1;}
 }
 @keyframes ani-ui-over
 {
-    10%{opacity: 0;}
-    20%{opacity: 1;}
+    20%{opacity: 0;}
+    30%{opacity: 1;}
 }
 
 @-webkit-keyframes ani-ui-over2
 {
-    25%{opacity: 0;}
-    35%{opacity: 1;}
+    35%{opacity: 0;}
+    45%{opacity: 1;}
 }
 @keyframes ani-ui-over2
 {
-    25%{opacity: 0;}
-    35%{opacity: 1;}
+    35%{opacity: 0;}
+    45%{opacity: 1;}
 }
 
 @-webkit-keyframes ani-ui-click
 {
     50%{width: 0;height: 0;right: 90px;top: 50%;}
     55%{width: 180px;height: 315px;right: 0;top: 0}
-    75%{width: 180px;height: 315px;right: 0;top: 0}
-    85%{width: 180px;height: 315px;right: -180px;top: 0;}
+    70%{width: 180px;height: 315px;right: 0;top: 0}
+    80%{width: 180px;height: 315px;right: -180px;top: 0;}
     100%{width: 180px;height: 315px;right: -180px;top: 0;}
 }
 @keyframes ani-ui-click
 {
     50%{width: 0;height: 0;right: 90px;top: 50%;}
     55%{width: 180px;height: 315px;right: 0;top: 0}
-    75%{width: 180px;height: 315px;right: 0;top: 0}
-    85%{width: 180px;height: 315px;right: -180px;top: 0;}
+    70%{width: 180px;height: 315px;right: 0;top: 0}
+    80%{width: 180px;height: 315px;right: -180px;top: 0;}
     100%{width: 180px;height: 315px;right: -180px;top: 0;}
 }
 
