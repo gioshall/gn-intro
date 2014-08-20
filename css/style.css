@@ -122,7 +122,7 @@ body {
 	margin-left: -90px;
 	top: 88px;
 	z-index: 0;
-	clip: rect(auto, auto, auto, auto);
+	overflow: hidden;
 }
 
 
@@ -133,8 +133,8 @@ body {
 	display: block;
 	position: absolute;
 	opacity: 0;
-	/*-webkit-animation:ani-ui 5s infinite;
-	animation:ani-ui 5s infinite;*/
+	-webkit-animation:ani-ui 5s infinite;
+	animation:ani-ui 5s infinite;
 }
 
 .oprani .intro-tip-screen .innerui::before,.oprani .intro-tip-screen .innerui::after {
@@ -178,7 +178,7 @@ body {
 @-webkit-keyframes ani-ui
 {
     0%{margin-left: 0;opacity: 0;}
-    5%{margin-left: 0;opacity: 1;}
+    5%{margin-left: 0;opacity: 1;display: none;}
     20%{margin-left: 0;}
     28%{margin-left: -180px;}
     35%{margin-left: -180px;}
@@ -190,7 +190,7 @@ body {
 @keyframes ani-ui
 {
     0%{margin-left: 0;opacity: 0;}
-    5%{margin-left: 0;opacity: 1;}
+    5%{margin-left: 0;opacity: 1;display: none;}
     20%{margin-left: 0;}
     28%{margin-left: -180px;}
     35%{margin-left: -180px;}
