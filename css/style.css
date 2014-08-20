@@ -122,7 +122,6 @@ body {
 	margin-left: -90px;
 	top: 88px;
 	overflow: hidden;
-	z-index: 0;
 }
 
 
@@ -137,7 +136,7 @@ body {
 	animation:ani-ui 5s infinite;
 }
 
-/*.oprani .intro-tip-screen .innerui::before,.oprani .intro-tip-screen .innerui::after {
+.oprani .intro-tip-screen .innerui::before,.oprani .intro-tip-screen .innerui::after {
 	content: '';
 	width: 180px;
 	height: 315px;
@@ -155,7 +154,7 @@ body {
 	width: 360px;
 	-webkit-animation:ani-ui-over2 5s infinite;
 	animation:ani-ui-over2 5s infinite;
-}*/
+}
 
 .oprani .intro-tip-screen .innerui .uiclick {
 	background: url(../img/intro-tip01-screen-click.svg) top center no-repeat;
@@ -171,8 +170,6 @@ body {
 
 .oprani .layer.intro-tip01b {
 	position: absolute;
-	overflow: hidden;
-	z-index: 100;
 	-webkit-animation:ani-fgr 5s infinite;
 	animation:ani-ui-fgr 5s infinite;
 }
