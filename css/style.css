@@ -202,6 +202,7 @@ body {
 
 @-webkit-keyframes ani-fgr
 {
+    0%{left: 0;z-index: 10000;}
     20%{left: 0;}
     23%{left: -8px;}
     25%{left: 0;}
@@ -217,6 +218,7 @@ body {
 }
 @keyframes ani-fgr
 {
+	0%{left: 0;z-index: 10000;}
 	20%{left: 0;}
     23%{left: -8px;}
     25%{left: 0;}
