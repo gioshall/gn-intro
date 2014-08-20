@@ -130,7 +130,7 @@ body {
 	background: url(../img/intro-tip01-screen.svg) top center no-repeat;
 	width: 540px;
 	height: 315px;
-	display: block;
+	display: none;
 	position: absolute;
 	opacity: 0;
 	-webkit-animation:ani-ui 5s infinite;
@@ -178,7 +178,7 @@ body {
 @-webkit-keyframes ani-ui
 {
     0%{margin-left: 0;opacity: 0;}
-    5%{margin-left: 0;opacity: 1;display: none;}
+    5%{margin-left: 0;opacity: 1;}
     20%{margin-left: 0;}
     28%{margin-left: -180px;}
     35%{margin-left: -180px;}
@@ -190,7 +190,7 @@ body {
 @keyframes ani-ui
 {
     0%{margin-left: 0;opacity: 0;}
-    5%{margin-left: 0;opacity: 1;display: none;}
+    5%{margin-left: 0;opacity: 1;}
     20%{margin-left: 0;}
     28%{margin-left: -180px;}
     35%{margin-left: -180px;}
