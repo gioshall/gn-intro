@@ -105,6 +105,114 @@ body {
 	background: url(../img/intro-tip01-c-right.svg) top center no-repeat;
 }
 
+.intro-tip-screen {
+	background-color: rgba(0,0,0,0.5);
+	width: 180px;
+	height: 315px;
+	left: 50%;
+	margin-left: -90px;
+	top: 88px;
+	overflow: hidden;
+}
+
+.intro-tip-screen .innerui {
+	background: url(../img/intro-tip01-screen.svg) top center no-repeat;
+	width: 540px;
+	height: 315px;
+	display: block;
+	position: relative;
+	-webkit-animation:ani-ui 4s infinite;
+	animation:ani-ui 4s infinite;
+}
+
+.intro-tip-screen .innerui::before,.intro-tip-screen .innerui::after {
+	content: '';
+	width: 180px;
+	height: 315px;
+	background-color: rgba(0,0,0,0.2);
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	-webkit-animation:ani-ui-over 4s infinite;
+	animation:ani-ui-over 4s infinite;
+}
+
+.intro-tip-screen .innerui::after {
+	width: 360px;
+	-webkit-animation:ani-ui-over2 4s infinite;
+	animation:ani-ui-over2 4s infinite;
+}
+
+.intro-tip-screen .uiclick {
+	background: url(../img/intro-tip01-screen-click.svg) top center no-repeat;
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	top: 50%;
+	right: 90px;
+	display: block;
+	-webkit-animation:ani-ui-click 4s infinite;
+	animation:ani-ui-click 4s infinite;
+}
+
+@-webkit-keyframes ani-ui
+{
+    10%{margin-left: 0;}
+    20%{margin-left: -180px;}
+    25%{margin-left: -180px;}
+    35%{margin-left: -360px;}
+    95%{margin-left: -360px;}
+}
+@keyframes ani-ui
+{
+    10%{margin-left: 0;}
+    20%{margin-left: -180px;}
+    25%{margin-left: -180px;}
+    35%{margin-left: -360px;}
+    95%{margin-left: -360px;}
+}
+
+@-webkit-keyframes ani-ui-over
+{
+    10%{opacity: 0;}
+    20%{opacity: 1;}
+}
+@keyframes ani-ui-over
+{
+    10%{opacity: 0;}
+    20%{opacity: 1;}
+}
+
+@-webkit-keyframes ani-ui-over2
+{
+    25%{opacity: 0;}
+    35%{opacity: 1;}
+}
+@keyframes ani-ui-over2
+{
+    25%{opacity: 0;}
+    35%{opacity: 1;}
+}
+
+@-webkit-keyframes ani-ui-click
+{
+    50%{width: 0;height: 0;right: 90px;top: 50%;}
+    55%{width: 180px;height: 315px;right: 0;top: 0}
+    75%{width: 180px;height: 315px;right: 0;top: 0}
+    85%{width: 180px;height: 315px;right: -180px;top: 0;}
+    100%{width: 180px;height: 315px;right: -180px;top: 0;}
+}
+@keyframes ani-ui-click
+{
+    50%{width: 0;height: 0;right: 90px;top: 50%;}
+    55%{width: 180px;height: 315px;right: 0;top: 0}
+    75%{width: 180px;height: 315px;right: 0;top: 0}
+    85%{width: 180px;height: 315px;right: -180px;top: 0;}
+    100%{width: 180px;height: 315px;right: -180px;top: 0;}
+}
+
 .layer.intro-tip02a {
 	background: url(../img/intro-tip01-a.svg) top center no-repeat;
 }

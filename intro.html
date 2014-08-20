@@ -59,7 +59,9 @@
 				</div>
 				<div class="item">
 					<div class="layer intro-tip01a"></div>
-					<div class="layer intro-tip-screen"></div>
+					<div class="layer intro-tip-screen">
+						<div class="innerui"><span class="uiclick"></span></div>
+					</div>
 					<div class="layer intro-tip01c left"></div>
 					<div class="layer intro-tip01b"></div>
 				</div>
@@ -95,7 +97,13 @@
 
 	//
 	flipsnap.element.addEventListener('fstouchend', function(ev) {
-    console.log(JSON.stringify(ev.newPoint));
+    var iPage = JSON.stringify(ev.newPoint);
+    console.log(iPage);
+    if( iPage >= 5){
+    	$('.pointer').hide()
+    }else{
+    	$('.pointer').show()
+    }
     }, false);
 
 </script>	
