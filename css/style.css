@@ -121,7 +121,6 @@ body {
 	left: 50%;
 	margin-left: -90px;
 	top: 88px;
-	overflow: hidden;
 	z-index: 0;
 	-webkit-animation:screen 5s 1;
 	animation:screen 5s 1;
@@ -179,16 +178,16 @@ body {
 
 @-webkit-keyframes screen
 {
-    0%{display: none;}
-    50%{display: block;}
-    100%{display: block;}
+    0%{}
+    20%{overflow: hidden;}
+    100%{overflow: hidden;}
 }
 
 @keyframes screen
 {
-    0%{display: none;}
-    50%{display: block;}
-    100%{display: block;}
+    0%{}
+    20%{overflow: hidden;}
+    100%{overflow: hidden;}
 }
 
 @-webkit-keyframes ani-ui
