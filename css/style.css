@@ -130,9 +130,10 @@ body {
 	background: url(../img/intro-tip01-screen.svg) top center no-repeat;
 	width: 540px;
 	height: 315px;
-	display: none;
+	display: block;
 	position: absolute;
 	opacity: 0;
+	z-index: 0;
 	-webkit-animation:ani-ui 5s infinite;
 	animation:ani-ui 5s infinite;
 }
