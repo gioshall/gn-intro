@@ -122,7 +122,6 @@ body {
 	margin-left: -90px;
 	top: 88px;
 	z-index: 0;
-	overflow: hidden;
 }
 
 
@@ -177,9 +176,9 @@ body {
 
 @-webkit-keyframes ani-ui
 {
-    0%{margin-left: -1px;opacity: 0;}
-    5%{margin-left: -1px;opacity: 1;}
-    20%{margin-left: -1px;}
+    0%{margin-left: 0;opacity: 0;}
+    5%{margin-left: 0;opacity: 1;}
+    20%{margin-left: 0;}
     28%{margin-left: -180px;}
     35%{margin-left: -180px;}
     43%{margin-left: -360px;}
@@ -189,9 +188,9 @@ body {
 }
 @keyframes ani-ui
 {
-    0%{margin-left: -1px;opacity: 0;}
-    5%{margin-left: -1px;opacity: 1;}
-    20%{margin-left: -1px;}
+    0%{margin-left: 0;opacity: 0;}
+    5%{margin-left: 0;opacity: 1;}
+    20%{margin-left: 0;}
     28%{margin-left: -180px;}
     35%{margin-left: -180px;}
     43%{margin-left: -360px;}
@@ -202,7 +201,6 @@ body {
 
 @-webkit-keyframes ani-fgr
 {
-    0%{left: 0;}
     20%{left: 0;}
     23%{left: -8px;}
     25%{left: 0;}
@@ -218,7 +216,6 @@ body {
 }
 @keyframes ani-fgr
 {
-	0%{left: 0;}
 	20%{left: 0;}
     23%{left: -8px;}
     25%{left: 0;}
