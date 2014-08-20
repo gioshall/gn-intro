@@ -94,16 +94,24 @@ body {
 }
 
 .layer.intro-tip01b {
-	z-index: 5;
 	background: url(../img/intro-tip01-b.svg) top center no-repeat;
+}
+
+.layer.intro-tip01c {
+	color: #3d3d3d;
+	font-size: 25px;
+	line-height: 542px;
+	font-weight: bold;
 }
 
 .layer.intro-tip01c.left {
 	background: url(../img/intro-tip01-c-left.svg) top center no-repeat;
+	text-align: left;	
 }
 
 .layer.intro-tip01c.right {
 	background: url(../img/intro-tip01-c-right.svg) top center no-repeat;
+	text-align: right;
 }
 
 .intro-tip-screen {
@@ -114,19 +122,22 @@ body {
 	margin-left: -90px;
 	top: 88px;
 	overflow: hidden;
+	z-index: 0;
 }
 
-.intro-tip-screen .innerui {
+
+.oprani .intro-tip-screen .innerui {
 	background: url(../img/intro-tip01-screen.svg) top center no-repeat;
 	width: 540px;
 	height: 315px;
 	display: block;
-	position: relative;
-	-webkit-animation:ani-ui 4s infinite;
-	animation:ani-ui 4s infinite;
+	position: absolute;
+	opacity: 0;
+	-webkit-animation:ani-ui 5s infinite;
+	animation:ani-ui 5s infinite;
 }
 
-.intro-tip-screen .innerui::before,.intro-tip-screen .innerui::after {
+.oprani .intro-tip-screen .innerui::before,.oprani .intro-tip-screen .innerui::after {
 	content: '';
 	width: 180px;
 	height: 315px;
@@ -136,17 +147,17 @@ body {
 	left: 0;
 	top: 0;
 	opacity: 0;
-	-webkit-animation:ani-ui-over 4s infinite;
-	animation:ani-ui-over 4s infinite;
+	-webkit-animation:ani-ui-over 5s infinite;
+	animation:ani-ui-over 5s infinite;
 }
 
-.intro-tip-screen .innerui::after {
+.oprani .intro-tip-screen .innerui::after {
 	width: 360px;
-	-webkit-animation:ani-ui-over2 4s infinite;
-	animation:ani-ui-over2 4s infinite;
+	-webkit-animation:ani-ui-over2 5s infinite;
+	animation:ani-ui-over2 5s infinite;
 }
 
-.intro-tip-screen .innerui .uiclick {
+.oprani .intro-tip-screen .innerui .uiclick {
 	background: url(../img/intro-tip01-screen-click.svg) top center no-repeat;
 	position: absolute;
 	width: 0px;
@@ -154,34 +165,39 @@ body {
 	top: 50%;
 	right: 90px;
 	display: block;
-	-webkit-animation:ani-ui-click 4s infinite;
-	animation:ani-ui-click 4s infinite;
+	-webkit-animation:ani-ui-click 5s infinite;
+	animation:ani-ui-click 5s infinite;
 }
 
-.layer.intro-tip01b.fgrani {
-	-webkit-animation:ani-fgr 4s infinite;
-	animation:ani-ui-fgr 4s infinite;
+.oprani .layer.intro-tip01b {
+	position: absolute;
+	-webkit-animation:ani-fgr 5s infinite;
+	animation:ani-ui-fgr 5s infinite;
 }
 
 @-webkit-keyframes ani-ui
 {
+    0%{margin-left: 0;opacity: 0;}
+    5%{margin-left: 0;opacity: 1;}
     20%{margin-left: 0;}
-    30%{margin-left: -180px;}
+    28%{margin-left: -180px;}
     35%{margin-left: -180px;}
-    45%{margin-left: -360px;}
-    91%{margin-left: -360px;opacity: 1;}
-    98%{margin-left: -360px;opacity: 0;}
-    99%{margin-left: 0px;opacity: 0;}
+    43%{margin-left: -360px;}
+    95%{margin-left: -360px;opacity: 1;}
+    98%{margin-left: -360px;opacity: 0;display: none;}
+    99%{margin-left: 0px;opacity: 0;display: block;}
 }
 @keyframes ani-ui
 {
+    0%{margin-left: 0;opacity: 0;}
+    5%{margin-left: 0;opacity: 1;}
     20%{margin-left: 0;}
-    30%{margin-left: -180px;}
+    28%{margin-left: -180px;}
     35%{margin-left: -180px;}
-    45%{margin-left: -360px;}
-    91%{margin-left: -360px;opacity: 1;}
-    98%{margin-left: -360px;opacity: 0;}
-    99%{margin-left: 0px;opacity: 0;}
+    43%{margin-left: -360px;}
+    95%{margin-left: -360px;opacity: 1;}
+    98%{margin-left: -360px;opacity: 0;display: none;}
+    99%{margin-left: 0px;opacity: 0;display: block;}
 }
 
 @-webkit-keyframes ani-fgr
@@ -218,39 +234,39 @@ body {
 @-webkit-keyframes ani-ui-over
 {
     20%{opacity: 0;}
-    30%{opacity: 1;}
+    28%{opacity: 1;}
 }
 @keyframes ani-ui-over
 {
     20%{opacity: 0;}
-    30%{opacity: 1;}
+    28%{opacity: 1;}
 }
 
 @-webkit-keyframes ani-ui-over2
 {
     35%{opacity: 0;}
-    45%{opacity: 1;}
+    43%{opacity: 1;}
 }
 @keyframes ani-ui-over2
 {
     35%{opacity: 0;}
-    45%{opacity: 1;}
+    43%{opacity: 1;}
 }
 
 @-webkit-keyframes ani-ui-click
 {
     50%{width: 0;height: 0;right: 90px;top: 50%;}
-    55%{width: 180px;height: 315px;right: 0;top: 0}
+    60%{width: 180px;height: 315px;right: 0;top: 0}
     70%{width: 180px;height: 315px;right: 0;top: 0}
-    80%{width: 180px;height: 315px;right: -180px;top: 0;}
+    78%{width: 180px;height: 315px;right: -180px;top: 0;}
     100%{width: 180px;height: 315px;right: -180px;top: 0;}
 }
 @keyframes ani-ui-click
 {
     50%{width: 0;height: 0;right: 90px;top: 50%;}
-    55%{width: 180px;height: 315px;right: 0;top: 0}
+    60%{width: 180px;height: 315px;right: 0;top: 0}
     70%{width: 180px;height: 315px;right: 0;top: 0}
-    80%{width: 180px;height: 315px;right: -180px;top: 0;}
+    78%{width: 180px;height: 315px;right: -180px;top: 0;}
     100%{width: 180px;height: 315px;right: -180px;top: 0;}
 }
 
@@ -295,6 +311,20 @@ body {
 	font-size: 30px;
 	margin: 0 0 20px 0;
 	font-weight: normal;
+}
+
+.guide {
+	width: 320px;
+	line-height: 70px;
+	background-color: #333;
+	text-align: center;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 28px;
+	font-weight: bold;
+	position: relative;
+	margin: auto;
+	top: 550px;
 }
 
 .pointer {

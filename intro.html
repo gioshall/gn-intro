@@ -57,13 +57,15 @@
 						可選擇單獨購買或是超值的遊戲組合。不需昂貴花費，<br>也能盡享遊戲樂趣。
 					</div>
 				</div>
-				<div class="item">
+				<div class="item ani01">
 					<div class="layer intro-tip01a"></div>
 					<div class="layer intro-tip-screen">
-						<div class="inner"><span class="uiclick"></span></div>
+						<div class="innerui"><span class="uiclick"></span></div>
 					</div>
-					<div class="layer intro-tip01c left"></div>
+					<div class="layer intro-tip01c left">切換選單</div>
+					<div class="layer intro-tip01c right">回上一頁</div>
 					<div class="layer intro-tip01b"></div>
+					<div class="guide">現在就請您左滑試試！</div>
 				</div>
 				<div class="item">
 					<div class="layer intro-tip02a"></div>
@@ -105,11 +107,9 @@
     	$('.pointer').show()
     }
     if( iPage == 5){
-    	$('.inner').addClass('innerui');
-    	$('.intro-tip01b').addClass('fgrani')
+    	$('.ani01').addClass('oprani');
     }else{
-    	$('.inner').removeClass('innerui');
-    	$('.intro-tip01b').removeClass('fgrani')
+    	$('.ani01').removeClass('oprani');
     }
     }, false);
 
