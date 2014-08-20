@@ -122,6 +122,7 @@ body {
 	margin-left: -90px;
 	top: 88px;
 	z-index: 0;
+	overflow: hidden;
 }
 
 
@@ -201,6 +202,7 @@ body {
 
 @-webkit-keyframes ani-fgr
 {
+    0%{left: 0;}
     20%{left: 0;}
     23%{left: -8px;}
     25%{left: 0;}
@@ -216,6 +218,7 @@ body {
 }
 @keyframes ani-fgr
 {
+	0%{left: 0;}
 	20%{left: 0;}
     23%{left: -8px;}
     25%{left: 0;}
