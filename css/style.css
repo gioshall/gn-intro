@@ -92,8 +92,8 @@ body {
 }
 
 .introani .intro01b,.introani .intro02a,.introani .intro03b,.introani .intro04b {
-	-webkit-animation:ani-intro 3.5s 1 forwards;
-	animation:ani-intro 3.5s 1 forwards;
+	-webkit-animation:ani-intro 3s 1 forwards;
+	animation:ani-intro 3s 1 forwards;
 	opacity: 0;
 }
 
