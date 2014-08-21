@@ -95,6 +95,18 @@
 <script src="js/flipsnap.min.js"></script>
 <script src="js/shake.js"></script>
 <script>
+//lock viewport
+$(document).ready(function () {
+  function reorient(e) {
+    var portrait = (window.orientation % 180 == 0);
+    $("body > div").css("-webkit-transform", !portrait ? "rotate(-90deg)" : "");
+  }
+  window.onorientationchange = reorient;
+  window.setTimeout(reorient, 0);
+});
+    
+    //
+
 	var $pointer = $('.pointer span');
 	var flipsnap = Flipsnap('.flipsnap', {
 		distance: 620
