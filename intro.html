@@ -84,6 +84,10 @@
 		    </div>
 
 		</div>
+		<div class="entrance">
+			<img src="img/logo.svg">
+			<div class="btn-start"><img src="img/icon-start.svg"><span>開始遊戲</span></div>
+		</div>
 	</div>
 </div>
 
@@ -120,6 +124,7 @@
 	function shakeEventDidOccur () {	
 		if (confirm("看來你已經準備好了。")) {
 			$('.intro').remove();
+			$('.entrance').show();
 		}
 	}
 
