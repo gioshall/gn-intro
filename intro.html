@@ -21,7 +21,7 @@
 						不論是賽車﹑ 射擊﹑或球類遊戲，最夯的熱門遊戲，<br>為你精心挑選。
 					</div>					
 				</div>
-				<div class="item">
+				<div class="item intro01">
 					<div class="layer intro01a"></div>
 					<div class="layer intro01b"></div>
 					<div class="text tinner">
@@ -30,7 +30,7 @@
 						操作好上手，一切就是這麼自然。隨心所欲，讓遊戲<br>更好玩。
 					</div>
 				</div>
-				<div class="item">
+				<div class="item intro02">
 					<div class="layer intro02a"></div>
 					<div class="layer intro02b"></div>
 					<div class="text tinner">
@@ -39,7 +39,7 @@
 						不須一再下載， 遊戲已自動推送到你所有裝置上。<br>從晨間咖啡到傍晚通勤，都有精彩遊戲伴隨。
 					</div>
 				</div>
-				<div class="item">
+				<div class="item intro03">
 					<div class="layer intro03a"></div>
 					<div class="layer intro03b"></div>
 					<div class="text tinner">
@@ -48,7 +48,7 @@
 						每款遊戲都無比鮮麗生動，既流暢又真實，讓你享受<br>全方位的高品質遊戲體驗。
 					</div>
 				</div>
-				<div class="item">
+				<div class="item intro04">
 					<div class="layer intro04a"></div>
 					<div class="layer intro04b"></div>
 					<div class="text tinner">
@@ -104,7 +104,7 @@
 		$pointer.eq(flipsnap.currentPoint).addClass('current');
 	}, false);
 
-	//
+	// animation
 	flipsnap.element.addEventListener('fstouchend', function(ev) {
     var iPage = JSON.stringify(ev.newPoint);
     console.log(iPage);
@@ -112,6 +112,14 @@
     	$('.pointer').hide()
     }else{
     	$('.pointer').show()
+    };
+    for (i = 0; i < 5; i++) {
+        if( iPage == i){
+    		$('.intro0'+i).addClass('introani');
+        }	
+    }
+    if( iPage == 0){
+    		$('.item').removeClass('introani');
     };
     if( iPage == 5){
     	$('.ani01').addClass('oprani');
@@ -127,7 +135,6 @@
 			$('.entrance').show();
 		}
 	}
-
     }else{
     	$('.ani02').removeClass('shkani');
     }

@@ -63,10 +63,11 @@ body {
 
 .layer.intro01b {
 	background: url(../img/intro-01-b.svg) top center no-repeat;
+	opacity: 0;
 }
 
 .layer.intro02a {
-	background: url(../img/intro-02-a.svg) top center no-repeat;
+	background: url(../img/intro-02-a.svg) top center no-repeat;	
 }
 
 .layer.intro02b {
@@ -87,6 +88,25 @@ body {
 
 .layer.intro04b {
 	background: url(../img/intro-04-b.svg) top center no-repeat;
+}
+
+.introani .intro01b,.introani .intro02a,.introani .intro03b,.introani .intro04b {
+	-webkit-animation:ani-intro 3.5s 1 forwards;
+	animation:ani-intro 3.5s 1 forwards;
+	opacity: 0;
+}
+
+@-webkit-keyframes ani-intro
+{
+    0%{opacity: 0;}
+    80%{opacity: 1;}
+    100%{opacity: 1;}
+}
+@keyframes ani-intro
+{
+    0%{opacity: 0;}
+    80%{opacity: 1;}
+    100%{opacity: 1;}
 }
 
 .layer.intro-tip01a {
@@ -328,22 +348,22 @@ body {
 
 @-webkit-keyframes ani-shk
 {
-    50%{-webkit-transform: rotate(0deg);}
-    52%{-webkit-transform: rotate(8deg);}
-    55%{-webkit-transform: rotate(-8deg);}
-    58%{-webkit-transform: rotate(8deg);}
-    61%{-webkit-transform: rotate(-8deg);}
-    63%{-webkit-transform: rotate(0deg);}
+    30%{-webkit-transform: rotate(0deg);}
+    32%{-webkit-transform: rotate(8deg);}
+    35%{-webkit-transform: rotate(-8deg);}
+    38%{-webkit-transform: rotate(8deg);}
+    41%{-webkit-transform: rotate(-8deg);}
+    43%{-webkit-transform: rotate(0deg);}
 }
 
 @keyframes ani-shk
 {
-    50%{transform: rotate(0deg);}
-    52%{transform: rotate(8deg);}
-    55%{transform: rotate(-8deg);}
-    58%{transform: rotate(8deg);}
-    61%{transform: rotate(-8deg);}
-    63%{transform: rotate(0deg);}
+    30%{transform: rotate(0deg);}
+    32%{transform: rotate(8deg);}
+    35%{transform: rotate(-8deg);}
+    38%{transform: rotate(8deg);}
+    41%{transform: rotate(-8deg);}
+    43%{transform: rotate(0deg);}
 }
 
 .layer.intro-tip02b {
