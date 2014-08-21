@@ -104,14 +104,20 @@ body {
 	font-weight: bold;
 }
 
-.layer.intro-tip01c.left {
+.oprani .layer.intro-tip01c.left {
 	background: url(../img/intro-tip01-c-left.svg) top center no-repeat;
-	text-align: left;	
+	text-align: left;
+	opacity: 0;
+	-webkit-animation:arwl 6s infinite;
+	animation:arwl 6s infinite;	
 }
 
-.layer.intro-tip01c.right {
+.oprani .layer.intro-tip01c.right {
 	background: url(../img/intro-tip01-c-right.svg) top center no-repeat;
 	text-align: right;
+	opacity: 0;
+	-webkit-animation:arwr 6s infinite;
+	animation:arwr 6s infinite;
 }
 
 .intro-tip-screen {
@@ -134,8 +140,8 @@ body {
 	display: block;
 	position: absolute;
 	opacity: 0;
-	-webkit-animation:ani-ui 5s infinite;
-	animation:ani-ui 5s infinite;
+	-webkit-animation:ani-ui 6s infinite;
+	animation:ani-ui 6s infinite;
 }
 
 .oprani .intro-tip-screen .innerui::before,.oprani .intro-tip-screen .innerui::after {
@@ -148,14 +154,14 @@ body {
 	left: 0;
 	top: 0;
 	opacity: 0;
-	-webkit-animation:ani-ui-over 5s infinite;
-	animation:ani-ui-over 5s infinite;
+	-webkit-animation:ani-ui-over 6s infinite;
+	animation:ani-ui-over 6s infinite;
 }
 
 .oprani .intro-tip-screen .innerui::after {
 	width: 360px;
-	-webkit-animation:ani-ui-over2 5s infinite;
-	animation:ani-ui-over2 5s infinite;
+	-webkit-animation:ani-ui-over2 6s infinite;
+	animation:ani-ui-over2 6s infinite;
 }
 
 .oprani .intro-tip-screen .innerui .uiclick {
@@ -166,14 +172,14 @@ body {
 	top: 50%;
 	right: 90px;
 	display: block;
-	-webkit-animation:ani-ui-click 5s infinite;
-	animation:ani-ui-click 5s infinite;
+	-webkit-animation:ani-ui-click 6s infinite;
+	animation:ani-ui-click 6s infinite;
 }
 
 .oprani .layer.intro-tip01b {
 	position: absolute;
-	-webkit-animation:ani-fgr 5s infinite;
-	animation:ani-ui-fgr 5s infinite;
+	-webkit-animation:ani-fgr 6s infinite;
+	animation:ani-ui-fgr 6s infinite;
 }
 
 @-webkit-keyframes ani-ui
@@ -199,6 +205,36 @@ body {
     95%{margin-left: -360px;opacity: 1;}
     98%{margin-left: -360px;opacity: 0;display: none;}
     99%{margin-left: 0px;opacity: 0;display: block;}
+}
+
+@-webkit-keyframes arwl
+{
+    10%{opacity: 0;}
+    20%{opacity: 1;}
+    50%{opacity: 1;}
+    60%{opacity: 0;}
+}
+@keyframes arwl
+{
+    10%{opacity: 0;}
+    20%{opacity: 1;}
+    50%{opacity: 1;}
+    60%{opacity: 0;}
+}
+
+@-webkit-keyframes arwr
+{
+    65%{opacity: 0;}
+    75%{opacity: 1;}
+    85%{opacity: 1;}
+    95%{opacity: 0;}
+}
+@keyframes arwr
+{
+    65%{opacity: 0;}
+    75%{opacity: 1;}
+    85%{opacity: 1;}
+    95%{opacity: 0;}
 }
 
 @-webkit-keyframes ani-fgr
