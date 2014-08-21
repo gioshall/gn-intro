@@ -68,9 +68,9 @@
 					<div class="guide">現在就請您左滑試試！</div>
 				</div>
 				<div class="item ani02">
-					<h3>搖晃可重新連結服務</h3>
 					<div class="layer intro-tip02a"></div>
 					<div class="layer intro-tip02b"></div>
+					<h3>搖晃可重新連結服務</h3>
 					<div class="guide">現在就請您搖晃裝置!</div>
 				</div>
 			</div>
@@ -89,6 +89,7 @@
 
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="js/flipsnap.min.js"></script>
+<script src="js/shake.js"></script>
 <script>
 	var $pointer = $('.pointer span');
 	var flipsnap = Flipsnap('.flipsnap', {
@@ -115,6 +116,18 @@
     };
     if( iPage == 6){
     	$('.ani02').addClass('shkani');
+    	
+
+	window.addEventListener('shake', shakeEventDidOccur, false);
+	
+	//define a custom method to fire when shake occurs.
+	function shakeEventDidOccur () {	
+		//put your own code here etc.
+		if (confirm("OKOK")) {
+
+		}
+	}
+
     }else{
     	$('.ani02').removeClass('shkani');
     }
