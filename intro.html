@@ -119,7 +119,7 @@
 	window.addEventListener('shake', shakeEventDidOccur, false);	
 	function shakeEventDidOccur () {	
 		if (confirm("看來你已經準備好了。")) {
-			$( 'body' ).remove( ".intro" );
+			$('.intro').remove();
 		}
 	}
 
