@@ -67,9 +67,11 @@
 					<div class="layer intro-tip01b"></div>
 					<div class="guide">現在就請您左滑試試！</div>
 				</div>
-				<div class="item">
+				<div class="item ani02">
+					<h3>搖晃可重新連結服務</h3>
 					<div class="layer intro-tip02a"></div>
 					<div class="layer intro-tip02b"></div>
+					<div class="guide">現在就請您搖晃裝置!</div>
 				</div>
 			</div>
 
@@ -105,11 +107,16 @@
     	$('.pointer').hide()
     }else{
     	$('.pointer').show()
-    }
+    };
     if( iPage == 5){
     	$('.ani01').addClass('oprani');
     }else{
     	$('.ani01').removeClass('oprani');
+    };
+    if( iPage == 6){
+    	$('.ani02').addClass('shkani');
+    }else{
+    	$('.ani02').removeClass('shkani');
     }
     }, false);
 

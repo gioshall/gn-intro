@@ -321,6 +321,31 @@ body {
 	display: block;
 }
 
+.shkani .layer.intro-tip02a {
+	-webkit-animation:ani-shk 2.5s infinite;
+	animation:ani-ui-shk 2.5s infinite;
+}
+
+@-webkit-keyframes ani-shk
+{
+    50%{-webkit-transform: rotate(0deg);}
+    52%{-webkit-transform: rotate(8deg);}
+    55%{-webkit-transform: rotate(-8deg);}
+    58%{-webkit-transform: rotate(8deg);}
+    61%{-webkit-transform: rotate(-8deg);}
+    63%{-webkit-transform: rotate(0deg);}
+}
+
+@keyframes ani-shk
+{
+    50%{transform: rotate(0deg);}
+    52%{transform: rotate(8deg);}
+    55%{transform: rotate(-8deg);}
+    58%{transform: rotate(8deg);}
+    61%{transform: rotate(-8deg);}
+    63%{transform: rotate(0deg);}
+}
+
 .layer.intro-tip02b {
 	background: url(../img/intro-tip02-b.svg) top center no-repeat;
 }
@@ -348,6 +373,16 @@ body {
 	font-size: 30px;
 	margin: 0 0 20px 0;
 	font-weight: normal;
+}
+
+
+.ani02 h3 {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	top: 0;
+	font-size: 20px;
 }
 
 .guide {
