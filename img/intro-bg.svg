@@ -10,9 +10,9 @@
 	<stop  offset="1" style="stop-color:#51922F"/>
 </linearGradient>
 <rect x="0" y="0" fill="url(#SVGID_1_)" width="1024" height="1024"/>
-<radialGradient id="SVGID_2_" cx="333.05" cy="243.2083" r="530.7905" gradientTransform="matrix(1.6019 0.7979 0.5527 -1.1096 -736.861 509.1298)" gradientUnits="userSpaceOnUse">
+<radialGradient id="SVGID_2_" cx="333.05" cy="243.2087" r="530.7902" gradientTransform="matrix(1.3455 0.7979 0.4642 -1.1096 -618.9146 509.1298)" gradientUnits="userSpaceOnUse">
 	<stop  offset="0" style="stop-color:#6EAD42;stop-opacity:0.1"/>
 	<stop  offset="1" style="stop-color:#29851C;stop-opacity:0.6"/>
 </radialGradient>
-<polygon fill="url(#SVGID_2_)" points="391.716,0 0,0 0,1024 599.516,1024 899.628,315.203 "/>
+<polygon fill="url(#SVGID_2_)" points="329.015,0 0,0 0,1024 503.553,1024 755.628,315.203 "/>
 </svg>
