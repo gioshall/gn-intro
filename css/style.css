@@ -80,6 +80,7 @@ body {
 
 .layer.intro03b {
 	background: url(../img/intro-03-b.svg) top center no-repeat;
+	opacity: 0;
 }
 
 .layer.intro04a {
