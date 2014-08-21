@@ -425,6 +425,11 @@ body {
 	display: none;
 }
 
+.entrance .logo {
+	position: relative;
+	top: 30%;
+}
+
 .entrance .btn-start {
 	position: absolute;
 	bottom: 0;
