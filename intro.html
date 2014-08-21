@@ -120,11 +120,9 @@
 
 	window.addEventListener('shake', shakeEventDidOccur, false);
 	
-	//define a custom method to fire when shake occurs.
 	function shakeEventDidOccur () {	
-		//put your own code here etc.
-		if (confirm("OKOK")) {
-
+		if (confirm()) {
+			$('body').fadeOut(200)
 		}
 	}
 
