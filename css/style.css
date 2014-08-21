@@ -426,8 +426,7 @@ body {
 }
 
 .entrance .logo {
-	position: relative;
-	top: 30%;
+	margin-top: 30%;
 }
 
 .entrance .btn-start {
