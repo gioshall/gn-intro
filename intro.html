@@ -116,13 +116,10 @@
     };
     if( iPage == 6){
     	$('.ani02').addClass('shkani');
-    	
-
-	window.addEventListener('shake', shakeEventDidOccur, false);
-	
+	window.addEventListener('shake', shakeEventDidOccur, false);	
 	function shakeEventDidOccur () {	
 		if (confirm("看來你已經準備好了。")) {
-
+			$( 'body' ).remove( ".intro" );
 		}
 	}
 
