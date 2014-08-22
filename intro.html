@@ -65,18 +65,20 @@
 					<div class="layer intro-tip01c left">切換選單</div>
 					<div class="layer intro-tip01c right">回上一頁</div>
 					<div class="layer intro-tip01b"></div>
-					<div class="guide">現在就請您左滑試試！</div>
+					<div class="guide">貼心操作app教學</div>
 				</div>
 				<div class="item ani02">
 					<div class="layer intro-tip02a"></div>
 					<div class="layer intro-tip02b"></div>
 					<h3>搖晃可重新連結服務</h3>
-					<div class="guide">現在就請您搖晃裝置!</div>
+					<div class="guide">請搖晃裝置開始GameNow</div>
 				</div>
 			</div>
 
 			<div class="pointer">
 			<span class="current"></span>
+			<span class=""></span>
+			<span class=""></span>
 			<span class=""></span>
 			<span class=""></span>
 			<span class=""></span>
@@ -108,11 +110,6 @@
 	flipsnap.element.addEventListener('fstouchend', function(ev) {
     var iPage = JSON.stringify(ev.newPoint);
     console.log(iPage);
-    if( iPage >= 5){
-    	$('.pointer').hide()
-    }else{
-    	$('.pointer').show()
-    };
     for (i = 0; i < 5; i++) {
         if( iPage == i){
     		$('.intro0'+i).addClass('introani');
@@ -130,7 +127,7 @@
     	$('.ani02').addClass('shkani');
 	window.addEventListener('shake', shakeEventDidOccur, false);	
 	function shakeEventDidOccur () {	
-		if (confirm("看來你已經準備好了。")) {
+		if () {
 			$('.intro').remove();
 			$('.entrance').show();
 		}

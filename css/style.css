@@ -408,7 +408,7 @@ body {
 }
 
 .guide {
-	width: 320px;
+	width: 380px;
 	line-height: 70px;
 	background-color: #333;
 	text-align: center;
@@ -418,7 +418,7 @@ body {
 	font-weight: bold;
 	position: relative;
 	margin: auto;
-	top: 550px;
+	top: 500px;
 }
 
 .pointer {
