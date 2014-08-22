@@ -108,34 +108,35 @@
 
 	// animation
 	flipsnap.element.addEventListener('fstouchend', function(ev) {
-    var iPage = JSON.stringify(ev.newPoint);
-    console.log(iPage);
-    for (i = 0; i < 5; i++) {
-        if( iPage == i){
-    		$('.intro0'+i).addClass('introani');
-        }	
-    }
-    if( iPage == 0){
-    		$('.item').removeClass('introani');
-    };
-    if( iPage == 5){
-    	$('.ani01').addClass('oprani');
-    }else{
-    	$('.ani01').removeClass('oprani');
-    };
-    if( iPage == 6){
-    	$('.ani02').addClass('shkani');
-	window.addEventListener('shake', shakeEventDidOccur, false);	
-	function shakeEventDidOccur () {	
-		if (confirm("看來你已經準備好了。")) {
-			$('.intro').remove();
-			$('.entrance').show();
+		var iPage = JSON.stringify(ev.newPoint);
+		console.log(iPage);
+		for (i = 0; i < 5; i++) {
+			if (iPage == i) {
+				$('.intro0' + i).addClass('introani');
+			}
 		}
-	}
-    }else{
-    	$('.ani02').removeClass('shkani');
-    }
-    }, false);
+		if (iPage == 0) {
+			$('.item').removeClass('introani');
+		};
+		if (iPage == 5) {
+			$('.ani01').addClass('oprani');
+		} else {
+			$('.ani01').removeClass('oprani');
+		};
+		if (iPage == 6) {
+			$('.ani02').addClass('shkani');
+			// window.addEventListener('shake', shakeEventDidOccur, false);
+
+			// function shakeEventDidOccur() {
+			// 	if (confirm("看來你已經準備好了。")) {
+			// 		$('.intro').remove();
+			// 		$('.entrance').show();
+			// 	}
+			// }
+		} else {
+			$('.ani02').removeClass('shkani');
+		}
+	}, false);
 
 </script>	
 </body>
