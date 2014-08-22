@@ -127,7 +127,7 @@
     	$('.ani02').addClass('shkani');
 	window.addEventListener('shake', shakeEventDidOccur, false);	
 	function shakeEventDidOccur () {	
-		if () {
+		if (confirm("看來你已經準備好了。")) {
 			$('.intro').remove();
 			$('.entrance').show();
 		}
