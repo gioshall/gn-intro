@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="user-scalable=no, target-densitydpi=device-dpi">
+	<meta id="viewport" name="viewport" content="user-scalable=no, target-densitydpi=device-dpi">
 	<title>intro</title>
 </head>
 <link rel="stylesheet" href="css/style.css" class="css">
 <script>
 if (screen.width <= 640) {
-    document.getElementById("viewport").setAttribute("content", "width=640");
+    $("#viewport").attr("content", "width=640");
 } else {
-	document.getElementById("viewport").setAttribute("content", "width=1024");
+	$("#viewport").attr("content", "width=1024");
 }
 </script>
 <body>
