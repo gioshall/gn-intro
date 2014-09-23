@@ -15,7 +15,7 @@ if (screen.width <= 640) {
 }
 </script>
 <body>
-
+<div class="dbox"><span>看來你已經準備好了。<button>確 定</button></span></div>
 <div class="wrapper">
 	<div class="container">
 		<div class="intro">
@@ -89,12 +89,12 @@ if (screen.width <= 640) {
 		    </div>
 
 		</div>
-		<div class="entrance">
+		<!-- <div class="entrance">
 			<img src="img/logo.svg" class="logo">
 			<div class="btn-start"><img src="img/icon-start.svg"><span>開始遊戲</span></div>
-		</div>
+		</div> -->
 	</div>
-</div>v
+</div>
 <script src="js/flipsnap.min.js"></script>
 <script src="js/shake.js"></script>
 <script>
@@ -124,9 +124,10 @@ if (screen.width <= 640) {
 			window.addEventListener('shake', shakeEventDidOccur, false);
 
 			function shakeEventDidOccur() {
-				alert("看來你已經準備好了。");
-				window.location.href = 'http://www.xbox.com/zh-TW/xbox-one/meet-xbox-one?xr=shellnav';
-				
+				$('.dbox').show();
+				$('.dbox button').click(function(){
+					window.location.href = 'http://www.xbox.com/zh-TW/xbox-one/meet-xbox-one?xr=shellnav';
+				})				
 			}
 		} else {
 			$('.ani02').removeClass('shkani');
