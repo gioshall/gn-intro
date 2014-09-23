@@ -2,10 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+	<meta name="viewport" content="user-scalable=no, target-densitydpi=device-dpi">
 	<title>intro</title>
 </head>
 <link rel="stylesheet" href="css/style.css" class="css">
+<script>
+if (screen.width <= 640) {
+    $("#viewport").attr("content", "width=640");
+} else {
+	$("#viewport").attr("content", "width=1024");
+}
+</script>
 <body>
 
 <div class="wrapper">
