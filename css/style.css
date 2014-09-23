@@ -377,7 +377,8 @@ body {
 	width: 600px;
 	text-align: left;
 	margin: auto;
-	font-size: 25px;
+	font-size: 24px;
+	text-align: center;
 }
 
 .item .text.tinner {
@@ -387,6 +388,7 @@ body {
 .item .text h1 {
 	line-height: 60px;
 	margin: 0;
+	text-align: center;
 }
 
 .item .text h2 {
