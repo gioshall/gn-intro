@@ -11,11 +11,11 @@
 <div class="wrapper">
 	<div class="container">
 		<div class="intro">
-			
+			<div class="wmark">GameNow 雲端遊樂器</div>
 			<div class="flipsnap">
 				<div class="item">
-					<img src="img/logo-u.svg">
-					<div class="text">
+					<div class="logo"><img src="img/logo-u.svg"></div>					
+					<div class="text tinner">
 					<h1>你的電視遊樂器，盡在指間</h1>
 						車、槍、球！精心挑選，為您的 iPhone / iPad 而生。
 					</div>					
@@ -105,7 +105,7 @@
 	flipsnap.element.addEventListener('fstouchend', function(ev) {
 		var iPage = JSON.stringify(ev.newPoint);
 		console.log(iPage);
-		for (i = 0; i < 5; i++) {
+		for (i = 0; i < 4; i++) {
 			if (iPage == i) {
 				$('.intro0' + i).addClass('introani');
 			}
@@ -113,12 +113,7 @@
 		if (iPage == 0) {
 			$('.item').removeClass('introani');
 		};
-		if (iPage == 5) {
-			$('.ani01').addClass('oprani');
-		} else {
-			$('.ani01').removeClass('oprani');
-		};
-		if (iPage == 6) {
+		if (iPage == 4) {
 			$('.ani02').addClass('shkani');
 			window.addEventListener('shake', shakeEventDidOccur, false);
 

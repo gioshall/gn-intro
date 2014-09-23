@@ -33,12 +33,12 @@ body {
 
 
 .flipsnap {
-	width: 4340px;
+	width: 3100px;
 }
 
 .item {
 	width: 620px;
-	height: 580px;
+	height: 570px;
 	text-align: center;
 	padding: 0;
 	float: left;
@@ -369,8 +369,15 @@ body {
 
 .layer.intro-tip02b {
 	background: url(../img/intro-tip02-b.svg) top center no-repeat;
+	top: 10px;
 }
 
+.item .logo {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	padding-top: 60px;
+}
 
 
 .item .text {
@@ -386,7 +393,7 @@ body {
 }
 
 .item .text h1 {
-	line-height: 60px;
+	line-height: 70px;
 	margin: 0;
 	text-align: center;
 }
@@ -420,7 +427,7 @@ body {
 	font-weight: bold;
 	position: relative;
 	margin: auto;
-	top: 500px;
+	top: 480px;
 }
 
 .pointer {
@@ -434,7 +441,7 @@ body {
 	display: inline-block;
 	width: 10px;
 	height: 10px;
-	margin: 15px 5px;
+	margin: 0 7px;
 	border-radius: 50%;
 	background-color: rgba(255,255,255,.3);
 }
@@ -460,4 +467,12 @@ body {
 
 .entrance .btn-start span, .entrance .btn-start img {
 	vertical-align: middle;
+}
+
+.wmark {
+	color: #fff;
+	position: absolute;
+	width: 100%;
+	bottom: 5px;
+	font-size: 13px;
 }
