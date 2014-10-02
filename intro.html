@@ -130,7 +130,9 @@ if (screen.width <= 640) {
 			}
 		} else {
 			$('.ani02').removeClass('shkani');
-			$('.dbox').attr('style','display:none');		
+			function shakeEventDidOccur() {
+				$('.dbox').attr('style','display:none');			
+			}		
 		}
 	}, false);
 
