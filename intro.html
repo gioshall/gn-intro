@@ -110,7 +110,7 @@ if (screen.width <= 640) {
 	// animation
 	flipsnap.element.addEventListener('fstouchend', function(ev) {
 		var iPage = JSON.stringify(ev.newPoint);
-		//console.log(iPage);
+		console.log(iPage);
 		for (i = 0; i < 4; i++) {
 			if (iPage == i) {
 				$('.intro0' + i).addClass('introani');
@@ -130,10 +130,7 @@ if (screen.width <= 640) {
 			}
 		} else {
 			$('.ani02').removeClass('shkani');
-			window.addEventListener('shake', shakeEventDidOccur, false);
-			function shakeEventDidOccur() {
-				$('.dbox').attr();			
-			}
+			$('.dbox').attr('style','');
 		}
 	}, false);
 
