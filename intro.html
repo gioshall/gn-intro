@@ -120,7 +120,6 @@ if (screen.width <= 640) {
 			$('.item').removeClass('introani');
 		};
 		if (iPage == 4) {
-			$('.dbox').attr();
 			$('.ani02').addClass('shkani');
 			window.addEventListener('shake', shakeEventDidOccur, false);
 			function shakeEventDidOccur() {
@@ -131,8 +130,9 @@ if (screen.width <= 640) {
 			}
 		} else {
 			$('.ani02').removeClass('shkani');
+			window.addEventListener('shake', shakeEventDidOccur, false);
 			function shakeEventDidOccur() {
-				$('.dbox').hide();				
+				$('.dbox').attr();			
 			}
 		}
 	}, false);
