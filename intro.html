@@ -118,10 +118,11 @@ if (screen.width <= 640) {
 				    $('.dbox button').click(function(){
 					window.location.href = 'http://www.xbox.com/zh-TW/xbox-one/meet-xbox-one?xr=shellnav';
 				})
-				}else {
+				};
+				if (iPage < 4)	{
 					$('.dbox').hide();
-				}								
-		}
+				}							
+		};
 		for (i = 0; i < 4; i++) {
 			if (iPage == i) {
 				$('.intro0' + i).addClass('introani');
