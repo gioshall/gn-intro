@@ -109,9 +109,19 @@ if (screen.width <= 640) {
 
 	// animation
 	flipsnap.element.addEventListener('fstouchend', function(ev) {
-		window.addEventListener('shake', shakeEventDidOccur, false);
 		var iPage = JSON.stringify(ev.newPoint);
 		console.log(iPage);
+		window.addEventListener('shake', shakeEventDidOccur, false);
+		function shakeEventDidOccur() {
+				if (iPage == 4) {
+					$('.dbox').show();
+				    $('.dbox button').click(function(){
+					window.location.href = 'http://www.xbox.com/zh-TW/xbox-one/meet-xbox-one?xr=shellnav';
+				})
+				}else {
+					$('.dbox').hide();
+				}								
+		}
 		for (i = 0; i < 4; i++) {
 			if (iPage == i) {
 				$('.intro0' + i).addClass('introani');
@@ -121,18 +131,9 @@ if (screen.width <= 640) {
 			$('.item').removeClass('introani');
 		};
 		if (iPage == 4) {
-			$('.ani02').addClass('shkani');
-			function shakeEventDidOccur() {
-				$('.dbox').show();
-				$('.dbox button').click(function(){
-					window.location.href = 'http://www.xbox.com/zh-TW/xbox-one/meet-xbox-one?xr=shellnav';
-				})				
-			}
+			$('.ani02').addClass('shkani');		
 		} else {
-			$('.ani02').removeClass('shkani');
-			function shakeEventDidOccur() {
-				$('.dbox').hide();			
-			}		
+			$('.ani02').removeClass('shkani');		
 		}
 	}, false);
 
