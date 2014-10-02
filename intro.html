@@ -109,6 +109,7 @@ if (screen.width <= 640) {
 
 	// animation
 	flipsnap.element.addEventListener('fstouchend', function(ev) {
+		window.addEventListener('shake', shakeEventDidOccur, false);
 		var iPage = JSON.stringify(ev.newPoint);
 		console.log(iPage);
 		for (i = 0; i < 4; i++) {
@@ -120,11 +121,12 @@ if (screen.width <= 640) {
 			$('.item').removeClass('introani');
 		};
 		if (iPage < 4) {
-			$('.dbox').hide();
+			function shakeEventDidOccur() {
+				$('.dbox').hide();			
+			}
 		}
 		if (iPage == 4) {
 			$('.ani02').addClass('shkani');
-			window.addEventListener('shake', shakeEventDidOccur, false);
 			function shakeEventDidOccur() {
 				$('.dbox').show();
 				$('.dbox button').click(function(){
